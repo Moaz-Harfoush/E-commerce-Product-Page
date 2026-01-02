@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Modern sneaker store interface with interactive product gallery, discounts, shopping cart, and fully responsive design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+<link href="./output.css" rel="stylesheet">
+<title>A Simple E-commerce product page</title>
+</head>
+<body class="w-full min-h-screen flex flex-col gap-12 py-7 items-center justify-center font-['Kumbh_Sans'] relative">
+
+        <div class="layout-header">
+
+            <div class="header-left">
+            
+                <img src="images/icon-menu.svg" alt="menu" class="menu-icon w-7 h-5 cursor-pointer hidden max-md:block">
+
+                <img src="images/logo.svg" alt="logo">
+
+                <ul class="nav-menu">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="flex relative">
+
+                    <img src="images/icon-cart.svg" alt="Shopping cart" class="cart-toggle-btn cursor-pointer">
+                    
+                    <p class="cart-counter">0</p>
+                
+                </div>
+                
+                <img src="images/image-avatar.png" alt="User profile" class="profile-avatar">
+
+                <div class="cart-dropdown hidden">
+
+                    <p class="m-4 text-lg font-bold tracking-[1px]">Cart</p>
+
+                    <hr>
+
+                    <div class="cart-empty-message">Your Cart is empty</div>
+                    
+                    <div class="cart-items-wrapper p-4 hidden">
+
+                        <div class="flex gap-4 items-center">
+
+                            <img src="images/image-product-1-thumbnail.jpg" alt="Sneakers thumbnail" class="w-12 rounded-lg">
+                            
+                            <div>
+                                <p class="text-[18px] text-textMuted max-md:text-[15px]">Fall Limited Edition Sneakers</p>
+                                <p class="cart-item-price text-[18px] text-textMuted"></p>
+                            </div>
+
+                            
+                            <img src="images/icon-delete.svg" alt="Remove item" class="remove-item-btn w-4 h-5 cursor-pointer">
+                        </div>
+
+                        <button class="w-full font-bold py-3 mt-8 rounded-xl bg-brandOrange">Checkout</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mobile-navbar-overlay -translate-x-full">
+
+            <div class="mobile-navbar-panel">
+            
+                <img src="images/icon-close.svg" alt="Close menu" class="cursor-pointer">
+            
+                <ul class="mobile-navbar-links">
+            
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+            
+                </ul>
+                
+            </div>
+        
+        </div>
+
+        <div class="hero-layout">
+
+            <div class="product-gallery w-[27rem] relative max-md:w-full">
+                <img src="images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" class="product-main-img">
+                
+                <div class="next-image-btn right-[4%]">
+                    <img src="images/icon-next.svg" alt="Next image">
+                </div>
+
+                <div class="prev-image-btn left-[4%]">
+                    <img src="images/icon-previous.svg" alt="Previous image">
+                </div>
+                
+                <div class="product-thumbnails max-md:hidden">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="Sneakers product image 1" class="thumbnail-active">
+                    <img src="images/image-product-2-thumbnail.jpg" alt="Sneakers product image 2">
+                    <img src="images/image-product-3-thumbnail.jpg" alt="Sneakers product image 3">
+                    <img src="images/image-product-4-thumbnail.jpg" alt="Sneakers product image 4">
+                </div>
+                
+                
+            </div>
+
+            <div class="product-details">
+
+                <p class="text-textSecondary text-xs tracking-[3px] font-bold">SNEAKER COMPANY</p>
+
+                <h2 class="w-4/5 text-textPrimary text-[40px] font-bold leading-10 max-md:text-2xl ">Fall Limite Edition Sneakers</h2>
+
+                <p class="text-textSecondary mt-4 max-md:mt-0">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+                <div class="max-md:flex max-md:justify-between max-md:items-center">
+                
+                    <div class="flex gap-4 items-center">
+                
+                        <p class="text-2xl font-bold">$125.00</p>
+                        <p class="bg-textPrimary px-2 text-pageBackground rounded-lg">50%</p>
+                
+                    </div>
+                
+                    <del class="text-textSecondary text-[15px] font-bold">$250.00</del>
+                
+                </div>
+
+                
+
+                <div class="flex gap-4 select-none max-md:flex-col">
+
+                    <div class="quantity-counter">
+                        <img src="images/icon-minus.svg" alt="Decrease quantity" class="quantity-decrease-btn w-1 h-4 rotate-90 cursor-pointer">
+                        <p class="font-bold">0</p>
+                        <img src="images/icon-plus.svg" alt="Increase quantity" class="quantity-increase-btn w-3 h-4 cursor-pointer">
+                    </div>
+
+                    <div class="btn-add-to-cart">
+                        <img src="images/icon-cart.svg" alt="" class="w-4 filter brightness-0">
+                        <p class="font-bold text-[15px]">Add to cart</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>  
+
+        <div class="product-gallery-overlay">
+
+            <div class="w-[27rem] flex justify-end max-md:w-4/5">
+
+                <img src="images/icon-close.svg" alt="close icon" class="close-gallery-btn w-5 cursor-pointer">
+            
+            </div>
+        
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
