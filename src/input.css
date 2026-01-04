@@ -6,7 +6,7 @@
     
     /* Header main container */
     .layout-header {
-        @apply w-4/5 h-[14vh] flex items-center justify-between border-b-2 border-b-borderLight max-lg:w-[90%];
+        @apply w-4/5 h-20 flex items-center justify-between border-b-2 border-b-borderLight max-lg:w-[90%];
     }
 
     /* Left side of header (logo + nav) */
